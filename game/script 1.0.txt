@@ -1,0 +1,182 @@
+﻿# The script of the game goes in this file.
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+define e = Character("Eileen")
+
+
+# The game starts here.
+
+label start:
+
+    # Show a background. This uses a placeholder by default, but you can
+    # add a file (named either "bg room.png" or "bg room.jpg") to the
+    # images directory to show it.
+
+    scene bg room
+
+    # This shows a character sprite. A placeholder is used, but you can
+    # replace it by adding a file named "eileen happy.png" to the images
+    # directory.
+
+    show eileen happy
+
+    # These display lines of dialogue.
+    
+    $ player_name = renpy.input("What is your name?")
+    
+    $ player_name = player_name.strip()
+    
+    if player_name == "":
+        $ player_name="John Doe"
+        
+    "You are an MC named %(player_name)s. You’re the typical business worker at a start-up company named Eco Co."
+    
+    "Eco Co. is a small business that focuses on promoting sustainability."
+    
+    "Within a year of its operations Eco Co. had made a number of products to help reduce waste in the environment such as bamboo cutlery, napkins from recycled fabric, edible straws and food wraps, etc."
+    
+    "You suddenly came up with an idea to create an eco-friendly water bottle, but that idea needs to be proposed to investors in order to gain financial support, and possibly growth for the business."
+    
+    "Your business idea seems like the perfect startup but you need a business plan to accompany this so you can pitch this idea to investors."
+    
+    "You start off with an executive summary. There are many questions you need to ask yourself:"
+    
+    "Who am I selling to?"
+    
+    "Why do they need my item?"
+    
+    "What am I selling?"
+    
+    "What does this product solve?"
+    
+    "Who am I competing with?"
+    
+    "What differentiates me from the rest?"
+    
+    "#2, next up is the company description. The company description contains 3 elements:"
+    
+    "1: The Mission Statement."
+    
+    "A mission statement should be inspirational to make others believe in your vision, emotional to captivate readers and grab their interest, and explain the reason for the company's existence."
+    
+    "2: The History."
+    
+    "The company's history should include founding date, major milestones, location(s), number of employees, executive leadership roles, and flagship products or services."
+    
+    "3: The Objectives."
+    
+    "Business objectives should be SMART (specific, measurable, achievable, realistic, time-bound) and must also be tied to key results."
+    
+    "#3, next is market research. You also have to identify your potential customers."
+    
+    "This is done by creating target markets, a.k.a. personas that include demographic information such as location, income, age, gender, education, profession, and hobbies."
+    
+    "{b}If your target market is too broad, it can be a red flag for investors.{/b}"
+    
+    "Understanding consumers’ behavior can provide a better understanding of their wants and needs."
+    
+    "#4, next is Competetive Analysis."
+    
+    "When it comes to conducting competitive analysis, we have to identify competing businesses in the market and answer questions on their advertising investments, press coverage, customer service, sales and pricing strategies, and third-party ratings."
+    
+    "It's essential to understand what makes your company unique and be able to describe the customer pain your business addresses."
+    
+    "Look into other businesses who provide similar products or services if there is no direct competition."
+    
+    "#5, Describing your product or service."
+    
+    "This section of a business plan outlines the benefits, production process, and product life cycle of a company's products or services."
+    
+    "It emphasizes unique features and their practical and emotional benefits to customers, as well as any intellectual property rights or patents that protect differentiation."
+    
+    "The production process details how existing and new products are created, raw materials are sourced and assembled through manufacturing, and quality control is maintained."
+    
+    "The product life cycle includes the time between purchases, upsells and down-sells, and plans for research and development."
+    
+    "#6, in the next step, outline your marketing and sales strategy."
+
+    "It should include launch plans, growth tactics, and retention strategies."
+
+    "It's also important to highlight what differentiates the business from its competitors and briefly touch on topics such as existing customer segments, value propositions and ideal target markets."
+
+    "#7, Compile your business finances."
+
+    "This step emphasizes the importance of preparing a budget and financial plan, even if your business is just starting out."
+
+    "For companies seeking investors, income statements, balance sheets, and other financial figures should be included."
+
+    "It is important to accurately calculate costs, including overhead, to determine a sale price that generates the desired profit level."
+
+    "Underestimating business costs can lead to setting sale prices too low."
+
+    "#8, Describe your organization and management."
+
+    "Lay out the importance of having a strong management team to turn your business idea into a reality and ensure its continued growth."
+
+    "The section of the plan should highlight the expertise and qualifications of each member of the team."
+
+    "It is important to also consider roles that still need to be hired and the cost of hiring experts to assist operations, such as a bookkeeper, CPA, or attorney."
+
+    "#9, Be realistic when describing your funding request and include a range of numbers."
+
+    "Selling equity means giving up a portion of the equity in your company, and investors may want to participate in decision-making as well as receive a share of profits."
+
+    "Borrowing money is another way to raise capital, but in order to lower interest costs on debt, it must be repaid as quickly as possible."
+
+    "#10, The last step is to compile a well-organized appendix with information that helps investors in their due diligence and gives you or your employees context."
+
+    "Include deeds, permits, legal docs, certifications, business registries, patents, industry associations, identification numbers, contracts, and purchase orders."
+
+    "You have what you're doing but do you have why you're doing it, why are you doing this?"
+
+    "Now that you have the basics, it's time to delve deeper."
+
+    "{b}A business plan unlike a business model has a lot more aspects and details to it.{/b}"
+
+    "When did you establish this company?"
+
+    "What is my goal for the future of this business?"
+
+    "Where is my company located?"
+
+    "Who is the person in charge?"
+
+    "How many employees do I need?"
+
+    "What is the best product of the company?"
+
+    "Now that you have a plan we need to see if you can afford that plan."
+
+    "How much of my revenue do I retain as net income?"
+
+    "What’s my ratio of liquidity to debt repayment ability?"
+
+    "How often do I collect on my invoices?"
+
+    "Figure out how much you'd need from the investors to make your company successful."
+
+    "You have a business plan ready to pitch your business idea to a panel of judges who will determine whether or not you get the funding for your startup."
+
+    "Lets see if you will get the funding you need."
+
+    "You arrive at the stage anxiously awaiting for the judges to tell you to start."
+
+    "How well do you know the judges?"
+
+    "The amount of research you do about the judges, there is an importance in how you present yourself but there is a bigger importance in where the investor lies on your business idea."
+
+    "Had enough of polluting the environment through the use of plastic water bottles?"
+
+    "Your journey starts now with our environmentally friendly water bottle!"
+
+    "Our bottle is made from biodegradable materials that cuts your carbon footprint, and offers you a sustainable solution to drinking, not to mention the fact that it's also reusable."
+
+    "Our sleek and stylish design comes in a variety of designs and can benefit the environment with style!"
+
+    "Switch to our environmentally friendly water bottle right away to join us in the fight against plastic waste!"
+
+    # This ends the game.
+
+    return
